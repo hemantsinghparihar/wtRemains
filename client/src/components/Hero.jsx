@@ -53,7 +53,8 @@ const Hero = () => {
               hero 
               flex items-center
               bg-cover bg-no-repeat
-               bg-[position:70%] sm:bg-[position:70%] md:bg-[position:60%] lg:bg-center
+               bg-[position:70%] sm:bg-[position:70%] md:bg-[position:60%] lg:bg-center 
+               transition-[background-position] duration-500 ease-in-out
               w-full h-[650px]
             "
           >
