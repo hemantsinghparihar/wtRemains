@@ -1,0 +1,36 @@
+.learning {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .learning::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #000000;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .learning:hover::after {
+    animation: underline-animation 0.8s forwards;
+  }
+  
+  @keyframes underline-animation {
+    0% {
+      width: 0;
+      left: 0;
+    }
+    50% {
+      width: 100%;
+      left: 0;
+    }
+    100% {
+      width: 0;
+      left: 100%;
+    }
+  }
+  
