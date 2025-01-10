@@ -185,42 +185,24 @@ const Nav = () => {
             }`}
           >
             <div className="wrapper">
-              <div className="row row--15 home-plesentation-wrapper single-dropdown-menu-presentation">
+              <div className="  pl-[14px]">
               {activeMenuItem &&
                 sidebarItems.map((data, index)=> (
-                    <div key={index}>
-                    <h3 className="demo-title ">{data.label}</h3>
-                    {/* <div className="row">
-                        {data.content.map((item, itemIndex) => (
-                        <div
-                            key={itemIndex}
-                            className="col-lg-12 col-xl-2 col-xxl-2 col-md-12 col-sm-12 col-12 single-mega-item"
-                        >
-                            <div className="demo-single">
-                            <div className="inner">
-                                <div className="thumbnail">
-                                <Link to="#">
-                                    <img
-                                    src={item.Image}
-                                    width={454}
-                                    height={332}
-                                    alt={`${item.course} Image`}
-                                    />
-                                </Link>
-                                </div>
-                                <div className="content">
-                                <h4 className="title">
-                                    <Link to="#">{item.course}</Link>
-                                </h4>
-                                <p>{item.institute}</p>
-                                <p>{item.duration}</p>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        ))}
-                    </div> */}
-                    </div>
+                    // <div key={index}>
+                    // <h3 className="demo-title ">{data.label}</h3>
+                   
+                   
+                    // </div>
+                  <Link key={index}
+                    className={`flex justify-between items-center text-[15px] py-[8px] w-full `}
+                   
+                   
+                  >
+                    
+                    <span>{data.label}</span>
+                    <span><img src={plus} alt="" className='w-[16px] h-[16px] ' /></span>
+                    
+                  </Link>
                 ))}
 
               </div>
@@ -278,6 +260,42 @@ const Nav = () => {
 }
 
 export default Nav
+
+
+
+
+//inside sidebar items
+ {/* <div className="row">
+                        {data.content.map((item, itemIndex) => (
+                        <div
+                            key={itemIndex}
+                            className="col-lg-12 col-xl-2 col-xxl-2 col-md-12 col-sm-12 col-12 single-mega-item"
+                        >
+                            <div className="demo-single">
+                            <div className="inner">
+                                <div className="thumbnail">
+                                <Link to="#">
+                                    <img
+                                    src={item.Image}
+                                    width={454}
+                                    height={332}
+                                    alt={`${item.course} Image`}
+                                    />
+                                </Link>
+                                </div>
+                                <div className="content">
+                                <h4 className="title">
+                                    <Link to="#">{item.course}</Link>
+                                </h4>
+                                <p>{item.institute}</p>
+                                <p>{item.duration}</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        ))}
+                    </div> */}
+
 
 
 

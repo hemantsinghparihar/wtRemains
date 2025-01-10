@@ -31,7 +31,7 @@ const Hero = () => {
 
   return (
     <div>
-      <div
+      {/* <div
         style={{
           backgroundImage:
             'url(https://asterhealthacademy.com/wp-content/uploads/2023/06/home-doctor-banner-image-desktop-1-1.jpg)',
@@ -43,7 +43,20 @@ const Hero = () => {
           objectFit:'cover'
         }}
         className="hero flex items-center"
-      >
+      > */}
+          <div
+            style={{
+              backgroundImage:
+                'url(https://asterhealthacademy.com/wp-content/uploads/2023/06/home-doctor-banner-image-desktop-1-1.jpg)',
+            }}
+            className="
+              hero 
+              flex items-center
+              bg-cover bg-no-repeat
+               bg-[position:70%] sm:bg-[position:70%] md:bg-[position:60%] lg:bg-center
+              w-full h-[650px]
+            "
+          >
         <div className="hero-title lg:max-w-[1140px] bt:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] sm:px-[1px] px-[15px]   mx-auto  ">
 
           <div className="hero-title-in">
