@@ -193,16 +193,33 @@ const Nav = () => {
                    
                    
                     // </div>
-                  <Link key={index}
-                    className={`flex justify-between items-center text-[15px] py-[8px] w-full `}
+                 <>
+                   <Link key={index}
+                   onClick={()=>{}}
+                    className={`program-nav flex justify-between items-center text-[15px] py-[8px] w-full `}
                    
                    
                   >
-                    
+                    {/* on clicking the  */}
                     <span>{data.label}</span>
                     <span><img src={plus} alt="" className='w-[16px] h-[16px] ' /></span>
                     
                   </Link>
+
+                  {/* based on relavent link click displaying data relavaent to data.label here */}
+                  {
+                    data.content.map((one)=>(
+                      <>
+                        <Link
+                        className={`flex justify-between items-center text-[14px] py-[6px] w-full pl-[10px]`}
+                        
+                      >
+                        <span>{one.course}</span>
+                      </Link>
+                      </>
+                    ))
+                  }
+                 </>
                 ))}
 
               </div>
